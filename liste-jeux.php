@@ -11,6 +11,7 @@
         <p class="lead"><?php echo $description_liste;?></p>
         <a href="#" class="btn btn-primary btn-lg"><?php echo $inscription; ?></a>
       </header>
+
       <!-- Page Features -->
         <table id="liste-jeux" class="table table-striped">
           <thead>
@@ -27,9 +28,9 @@
             foreach($tableau_jeux as $jeu){
                   echo '<tr>';
                   echo '<td>'.$compteur_jeu.'</td>';
-                  echo '<td>'.$jeu['jeu'].'</td>';
-                  echo '<td>'.$jeu['editeur'].'</td>';
-                  echo '<td>'.$jeu['categorie'].'</td>';
+                  echo '<td>'.htmlentities(ucfirst($jeu['jeu'])). ' ' . strlen($jeu['jeu']).'</td>';
+                  echo '<td>'.htmlentities(strtoupper($jeu['editeur'])).'</td>';
+                  echo '<td>'.htmlentities($jeu['categorie']).'</td>';
                   echo '</tr>';
                   $compteur_jeu++;
             } ?>
