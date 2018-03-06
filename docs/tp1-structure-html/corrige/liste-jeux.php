@@ -1,6 +1,4 @@
-<?php include_once('includes/header.html');
-include_once('includes/variables.php');
-?>
+<?php include_once('includes/header.html'); ?>
 
     <!-- Page Content -->
     <div class="container">
@@ -23,17 +21,24 @@ include_once('includes/variables.php');
             </tr>
           </thead>
           <tbody>
-            <?php
-            $compteur_jeu = 1;
-            foreach($tableau_jeux as $jeu){
-                  echo '<tr>';
-                  echo '<td>'.$compteur_jeu.'</td>';
-                  echo '<td>'.$jeu['prenom'].'</td>';
-                  echo '<td>'.$jeu['nom'].'</td>';
-                  echo '<td>'.$jeu['handle'].'</td>';
-                  echo '</tr>';
-                  $compteur_jeu++;
-            } ?>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
           </tbody>
         </table>
 

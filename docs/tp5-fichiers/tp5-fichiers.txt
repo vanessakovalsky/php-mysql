@@ -1,0 +1,11 @@
+A partir du fichier jeux.txt
+Chaque ligne du fichier contient des informations
+pour un jeu, séparé par un ";" 
+- Récupérer chaque ligne et les mettre dans une
+variable tableau
+- Afficher les jeux présents dans le fichier, dans
+le tableau présents sur liste_jeux.php
+- Créer une nouvelle page cree_jeu.php et l'ajouter dans
+le menu
+- A chaque affichage de la page, enregistrer une nouvelle
+ligne dans le fichier jeux.txt 

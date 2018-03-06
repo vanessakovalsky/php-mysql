@@ -1,0 +1,8 @@
+A l'aide de cette page de doc : http://php.net/manual/fr/ref.strings.php
+- Transformer tous les noms de jeux, en ajoutant une majuscule
+au premier caractère
+- Transformer tous les éditeurs de jeux, en les faisant
+apparaitre dans le tableau en majuscule
+- Transformer toutes les chaines en entités HTML
+- Afficher à côté du nom du jeu, le nombre de caractère
+contenu dans le nom du jeu

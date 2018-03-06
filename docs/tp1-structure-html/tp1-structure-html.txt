@@ -1,0 +1,11 @@
+- Lire le cahier des charges présents dans Doc pour l'application de ludothèque
+- Avec l'aide du framework bootstrap (https://getbootstrap.com/) et de ses thèmes gratuits
+(https://startbootstrap.com/) créer la structure HTML et CSS de notre application avec les 
+pages suivantes :
+-- Home : message de bienvenue sur notre site, prévoir 3 blocs pour mettre en avant 3 jeux 
+-- Liste des jeux : tableaux contenant la liste des jeux
+-- Connexion : page contenant un formulaire de connexion pour l'utilisateur
+-- Contact : formulaire de contact pour envoyer un message à l'administrateur
+- Sur chaque page, il devra figurer un menu en haut de page, avec un lien vers chacune des
+pages
+- Sur chaque page il devra figurer un footer avec le Copyright et l'année
