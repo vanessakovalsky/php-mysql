@@ -72,4 +72,7 @@ $submit_button = 'Envoyer';
 /* Footer */
 $footer_texte = 'Texte de pied de page ';
 
+/* Variable de connexion */
+$is_connected = TRUE;
+
  ?>

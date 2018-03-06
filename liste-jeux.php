@@ -1,9 +1,4 @@
 <?php include_once('includes/header.php');
-$file = fopen('jeux.txt','r+');
-while ($line = fgets($file)){
-$table[] = $line;
-}
-print_r($table);
 
 ?>
 
@@ -16,7 +11,6 @@ print_r($table);
         <p class="lead"><?php echo $description_liste;?></p>
         <a href="#" class="btn btn-primary btn-lg"><?php echo $inscription; ?></a>
       </header>
-
       <!-- Page Features -->
         <table id="liste-jeux" class="table table-striped">
           <thead>
@@ -28,24 +22,17 @@ print_r($table);
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td><?php echo $tableau_jeux[0]['jeu'];?></td>
-              <td><?php echo $tableau_jeux[0]['editeur'];?></td>
-              <td><?php echo $tableau_jeux[0]['categorie'];?></td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td><?php echo $tableau_jeux[1]['jeu'];?></td>
-              <td><?php echo $tableau_jeux[1]['editeur'];?></td>
-              <td><?php echo $tableau_jeux[1]['categorie'];?></td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td><?php echo $tableau_jeux[2]['jeu'];?></td>
-              <td><?php echo $tableau_jeux[2]['editeur'];?></td>
-              <td><?php echo $tableau_jeux[2]['categorie'];?></td>
-            </tr>
+            <?php
+            $compteur_jeu = 1;
+            foreach($tableau_jeux as $jeu){
+                  echo '<tr>';
+                  echo '<td>'.$compteur_jeu.'</td>';
+                  echo '<td>'.$jeu['jeu'].'</td>';
+                  echo '<td>'.$jeu['editeur'].'</td>';
+                  echo '<td>'.$jeu['categorie'].'</td>';
+                  echo '</tr>';
+                  $compteur_jeu++;
+            } ?>
           </tbody>
         </table>
 

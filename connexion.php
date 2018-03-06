@@ -1,5 +1,7 @@
-<?php include_once('includes/header.php'); ?>
+<?php include_once('includes/header.php');
 
+if($is_connected == FALSE){
+?>
     <!-- Page Content -->
     <div class="container">
 
@@ -31,5 +33,27 @@
 
     </div>
     <!-- /.container -->
+<?php
+}
+else { ?>
+  <!-- Page Content -->
+  <div class="container">
 
-<?php include_once('includes/footer.php'); ?>
+    <!-- Jumbotron Header -->
+    <header class="jumbotron my-4">
+      <h1 class="display-3">Bienvenue sur votre profil</h1>
+      <p class="lead"><?php echo $texte_connexion;?></p>
+      <a href="#" class="btn btn-primary btn-lg"><?php echo $inscription;?></a>
+    </header>
+
+    <!-- Page Features -->
+    <div class="row text-center">
+      <p>Vous êtes déjà connecté!</p>
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+<?php
+}
+include_once('includes/footer.php'); ?>

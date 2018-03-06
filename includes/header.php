@@ -1,4 +1,21 @@
-<?php include_once('variables.php'); ?>
+<?php include_once('variables.php');
+
+/* On teste les différents navigateurs */
+
+if(strpos($_SERVER['HTTP_USER_AGENT'],'Trident') || strpos($_SERVER['HTTP_USER_AGENT'],'Edge')){
+  $navigateur_utilise = 'Internet Explorer';
+}
+elseif(strpos($_SERVER['HTTP_USER_AGENT'],'Firefox')){
+  $navigateur_utilise = 'Mozilla Firefox';
+}
+elseif(strpos($_SERVER['HTTP_USER_AGENT'],'Chrome')){
+  $navigateur_utilise = 'Google Chrome';
+}
+else {
+  $navigateur_utilise = 'Inconnu';
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,6 +42,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#"><?php echo $titre_application; ?></a>
+        <span class="navbar-brand">Votre navigateur est <?php echo $navigateur_utilise;?>.</span>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
