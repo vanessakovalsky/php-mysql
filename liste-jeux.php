@@ -1,15 +1,13 @@
-<?php include_once('includes/header.html');
-include_once('includes/variables.php');
-?>
+<?php include_once('includes/header.php');?>
 
     <!-- Page Content -->
     <div class="container">
 
       <!-- Jumbotron Header -->
       <header class="jumbotron my-4">
-        <h1 class="display-3">Liste jeux</h1>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
-        <a href="#" class="btn btn-primary btn-lg">Call to action!</a>
+        <h1 class="display-3"><?php echo $nom_liste;?></h1>
+        <p class="lead"><?php echo $description_liste;?></p>
+        <a href="#" class="btn btn-primary btn-lg"><?php echo $inscription; ?></a>
       </header>
 
       <!-- Page Features -->
@@ -17,27 +15,34 @@ include_once('includes/variables.php');
           <thead>
             <tr>
               <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
+              <th scope="col"><?php echo $colonne_jeu;?></th>
+              <th scope="col"><?php echo $colonne_editeur;?></th>
+              <th scope="col"><?php echo $colonne_categorie;?></th>
             </tr>
           </thead>
           <tbody>
-            <?php
-            $compteur_jeu = 1;
-            foreach($tableau_jeux as $jeu){
-                  echo '<tr>';
-                  echo '<td>'.$compteur_jeu.'</td>';
-                  echo '<td>'.$jeu['prenom'].'</td>';
-                  echo '<td>'.$jeu['nom'].'</td>';
-                  echo '<td>'.$jeu['handle'].'</td>';
-                  echo '</tr>';
-                  $compteur_jeu++;
-            } ?>
+            <tr>
+              <th scope="row">1</th>
+              <td><?php echo $tableau_jeux[0]['jeu'];?></td>
+              <td><?php echo $tableau_jeux[0]['editeur'];?></td>
+              <td><?php echo $tableau_jeux[0]['categorie'];?></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td><?php echo $tableau_jeux[1]['jeu'];?></td>
+              <td><?php echo $tableau_jeux[1]['editeur'];?></td>
+              <td><?php echo $tableau_jeux[1]['categorie'];?></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td><?php echo $tableau_jeux[2]['jeu'];?></td>
+              <td><?php echo $tableau_jeux[2]['editeur'];?></td>
+              <td><?php echo $tableau_jeux[2]['categorie'];?></td>
+            </tr>
           </tbody>
         </table>
 
     </div>
     <!-- /.container -->
 
-<?php include_once('includes/footer.html'); ?>
+<?php include_once('includes/footer.php'); ?>

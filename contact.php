@@ -1,13 +1,13 @@
-<?php include_once('includes/header.html'); ?>
+<?php include_once('includes/header.php'); ?>
 
     <!-- Page Content -->
     <div class="container">
 
       <!-- Jumbotron Header -->
       <header class="jumbotron my-4">
-        <h1 class="display-3">Contact</h1>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
-        <a href="#" class="btn btn-primary btn-lg">Call to action!</a>
+        <h1 class="display-3"><?php echo $nom_contact;?></h1>
+        <p class="lead"><?php echo $texte_contact;?></p>
+        <a href="#" class="btn btn-primary btn-lg"><?php echo $inscription;?></a>
       </header>
 
       <!-- Page Features -->
@@ -15,11 +15,11 @@
 
         <form class="contact">
           <div class="form-group">
-            <label for="exampleFormControlInput1">Email address</label>
+            <label for="exampleFormControlInput1"><?php echo $adresse_email;?></label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
           </div>
           <div class="form-group">
-            <label for="exampleFormControlSelect1">Example select</label>
+            <label for="exampleFormControlSelect1"><?php echo $exemple_select;?></label>
             <select class="form-control" id="exampleFormControlSelect1">
               <option>1</option>
               <option>2</option>
@@ -29,7 +29,7 @@
             </select>
           </div>
           <div class="form-group">
-            <label for="exampleFormControlSelect2">Example multiple select</label>
+            <label for="exampleFormControlSelect2"><?php echo $exemple_multiple_select;?></label>
             <select multiple class="form-control" id="exampleFormControlSelect2">
               <option>1</option>
               <option>2</option>
@@ -39,10 +39,10 @@
             </select>
           </div>
           <div class="form-group">
-            <label for="exampleFormControlTextarea1">Example textarea</label>
+            <label for="exampleFormControlTextarea1"><?php echo $exemple_textarea;?></label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary mb-2">Envoyer</button>
+          <button type="submit" class="btn btn-primary mb-2"><?php echo $submit_button; ?></button>
 
         </form>
 
@@ -52,4 +52,4 @@
     </div>
     <!-- /.container -->
 
-<?php include_once('includes/footer.html'); ?>
+<?php include_once('includes/footer.php'); ?>
