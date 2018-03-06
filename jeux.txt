@@ -1,0 +1,2 @@
+kingdomino;blue orance;2016;'img/kingdomino.jpg';domino ameliore;familiale;15min;2-4;super jeu
+les aventuriers du rail france;asmodée;2017;'img/rail-france.jpg';a la decouverte de la france;familiale;75min;2-6;belle decouverte

@@ -1,11 +1,4 @@
-<?php include_once('includes/header.php');
-$file = fopen('jeux.txt','r+');
-while ($line = fgets($file)){
-$table[] = $line;
-}
-print_r($table);
-
-?>
+<?php include_once('includes/header.php');?>
 
     <!-- Page Content -->
     <div class="container">
