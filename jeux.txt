@@ -1,2 +1,4 @@
 kingdomino;blue orance;2016;'img/kingdomino.jpg';domino ameliore;familiale;15min;2-4;super jeu
 les aventuriers du rail france;asmodée;2017;'img/rail-france.jpg';a la decouverte de la france;familiale;75min;2-6;belle decouverte
+imaginarium;2018;bombyx;img/imaginarium.jpg;Réparer et construire des machines;familiale;90min;2-5;super mécanique de jeu
+Les colons de catane;Asmodée;2012;Jeu de gestion de ressources;Familiale;60min;2-4;commentaire
