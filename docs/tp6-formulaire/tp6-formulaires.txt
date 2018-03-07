@@ -1,0 +1,11 @@
+- Dans la page creer_jeu.php ajouter un formulaire HTML qui 
+présente l'ensemble des champs nécessaires à l'ajout de jeu
+- Créer une autre page afficher_jeu.php qui va traiter le 
+formulaire et afficher le détail d'un jeu
+- Traitement : enregistrer dans jeux.txt une nouvelle ligne
+avec l'ensemble des données
+- Affichage : afficher l'ensemble des informations qui viennent
+d'être envoyée par notre formulaire 
+- Ajouter à notre formulaire un champ de type fichier qui permet
+d'envoyer des photos du jeu et de les enregistrer dans le dossier
+img à la racine de notre site

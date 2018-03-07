@@ -57,6 +57,9 @@ else {
               <a class="nav-link" href="liste-jeux.php"><?php echo $nom_liste;?></a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="creer_jeu.php"><?php echo $nom_creer;?></a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="connexion.php"><?php echo $nom_connexion;?></a>
             </li>
             <li class="nav-item">

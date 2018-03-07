@@ -24,13 +24,17 @@
           </thead>
           <tbody>
             <?php
+            $file = fopen('jeux.txt','r+');
+            while ($line = fgets($file)){
+              $table[] = explode(';',$line);
+            }
             $compteur_jeu = 1;
-            foreach($tableau_jeux as $jeu){
+            foreach($table as $jeu){
                   echo '<tr>';
                   echo '<td>'.$compteur_jeu.'</td>';
-                  echo '<td>'.htmlentities(ucfirst($jeu['jeu'])). ' ' . strlen($jeu['jeu']).'</td>';
-                  echo '<td>'.htmlentities(strtoupper($jeu['editeur'])).'</td>';
-                  echo '<td>'.htmlentities($jeu['categorie']).'</td>';
+                  echo '<td>'.htmlentities(ucfirst($jeu[0])). ' ' . strlen($jeu[0]).'</td>';
+                  echo '<td>'.htmlentities(strtoupper($jeu[1])).'</td>';
+                  echo '<td>'.htmlentities($jeu[5]).'</td>';
                   echo '</tr>';
                   $compteur_jeu++;
             } ?>

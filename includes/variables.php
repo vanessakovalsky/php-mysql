@@ -5,6 +5,7 @@ $nom_home = 'Accueil';
 $nom_liste = 'Liste des jeux';
 $nom_connexion = 'Connexion';
 $nom_contact = 'Contact';
+$nom_creer = 'Créer un jeu';
 
 /*Texte homepage */
 $texte_accueil = 'Bienvenue sur le site de notre ludothèque<br />Vous trouverez la liste des jeux et des joueurs';
@@ -75,4 +76,6 @@ $footer_texte = 'Texte de pied de page ';
 /* Variable de connexion */
 $is_connected = TRUE;
 
+/* Créer un jeu */
+$description_creer = 'Un jeu manque? N\'hésitez pas à le rajouter';
  ?>
