@@ -1,0 +1,11 @@
+- Reprendre le formulaire de connexion de connexion.php 
+et comparer les informations renseignées à celles présentes dans users.txt
+- Si une paire identifiant/ mot de passe correspond, enregistrer en session
+la connexion (déclarer une variable de session 'is_connected' à TRUE) et
+déclarer un cookie avec l'identifiant du visiteur
+- Remplacer dans connexion.php le test sur la variable $is_connected par un 
+test sur la variable de session 'is_connected'
+- Ajouter à côté du nom du site dans le header un 'Bienvenue :login' ou :login
+correspond au nom enregistré dans le cookie 
+- Reprendre la page creer_jeu.php, n'afficher le formulaire que si 
+l'utilisateur est connecté, sinon redirigé vers le formulaire de connexion 
