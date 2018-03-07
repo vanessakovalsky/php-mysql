@@ -12,7 +12,7 @@
       </header>
 
       <!-- Page Features -->
-      <form action="afficher_jeu.php" method="POST">
+      <form action="afficher_jeu.php" method="POST" enctype="multipart/form-data">
         <div class="form-group">
           <label for="nom_jeu">Nom du jeu</label>
           <input type="text" name="nom_jeu" class="form-control">
@@ -24,6 +24,10 @@
         <div class="form-group">
           <label for="annee">Année de sortie</label>
           <input type="text" name="annee" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="image">Image</label>
+          <input type="file" name="image" class="form-control">
         </div>
         <div class="form-group">
           <label for="descriptif">Description</label>
