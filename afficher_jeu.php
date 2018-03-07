@@ -36,8 +36,8 @@ echo 'votre nouveau jeu a été ajouté';
 
        <!-- Jumbotron Header -->
        <header class="jumbotron my-4">
-         <h1 class="display-3"><?php echo $_POST['nom_jeu'];?></h1>
-         <p class="lead"><?php echo $_POST['descriptif'];?></p>
+         <h1 class="display-3"><?php echo htmlentities($_POST['nom_jeu']);?></h1>
+         <p class="lead"><?php echo htmlentities($_POST['descriptif']);?></p>
          <a href="#" class="btn btn-primary btn-lg"><?php echo $inscription; ?></a>
        </header>
 
