@@ -20,6 +20,7 @@ des informations contenus en base de données et non plus dans le fichier txt
 [BONUS] - Ajouter un formulaire pour créer des utilisateur, et les enregistrer en base
 de données
 [BONUS] Afficher une liste des utilisateurs depuis la base de données
+[BONUS] Ajouter dans la liste de jeux, la possibilité de supprimer un jeu avec un lien
 [BONUS] Lorsque un utilisateur est connecté, lui donné la possibilité d'ajouter un jeu
 à sa collection via un formulaire qui contient une liste déroulante listant les jeux 
 présents en BDD
