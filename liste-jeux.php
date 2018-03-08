@@ -24,6 +24,7 @@
           </thead>
           <tbody>
             <?php
+            /*
             $file = fopen('jeux.txt','r+');
             while ($line = fgets($file)){
               $table[] = explode(';',$line);
@@ -37,7 +38,31 @@
                   echo '<td>'.htmlentities($jeu[5]).'</td>';
                   echo '</tr>';
                   $compteur_jeu++;
-            } ?>
+            } */
+            require_once('includes/connect.php');
+            $dsn = 'mysql:dbname='.$db.';host='.$hote;
+            try{
+              $connexion = new PDO($dsn, $user_db, $password_db);
+            }
+            catch(PDOExecption $e){
+              printf("Echec de lz connexion : %s\n", $e->getMesage());
+              exit();
+            }
+            $liste_jeux_sql = 'SELECT * FROM jeux';
+            if(!$connexion->query($liste_jeux_sql)){
+              echo 'Problème sur la requête de la liste de jeux';
+            }
+            else {
+              foreach($connexion->query($liste_jeux_sql) as $jeu){
+                echo '<tr>';
+                echo '<td>'.$jeu['id'].'</td>';
+                echo '<td>'.$jeu['nom_jeu'].'</td>';
+                echo '<td>'.$jeu['editeur'].'</td>';
+                echo '</tr>';
+              }
+            }
+
+            ?>
           </tbody>
         </table>
 
