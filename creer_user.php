@@ -8,7 +8,7 @@ include_once('includes/header.php');
 
       <!-- Jumbotron Header -->
       <header class="jumbotron my-4">
-        <h1 class="display-3"><?php echo $nom_creer;?></h1>
+        <h1 class="display-3"><?php echo $user_creer;?></h1>
         <p class="lead"><?php echo $description_creer;?></p>
         <a href="#" class="btn btn-primary btn-lg"><?php echo $inscription; ?></a>
       </header>

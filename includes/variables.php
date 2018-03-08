@@ -78,4 +78,7 @@ $is_connected = TRUE;
 
 /* Créer un jeu */
 $description_creer = 'Un jeu manque? N\'hésitez pas à le rajouter';
+
+/* Créer user */
+$user_creer = 'Créer un utilisateur';
  ?>
