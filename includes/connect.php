@@ -1,5 +1,5 @@
 <?php
-$db = 'kingludo';
+$db = 'kingoludo';
 $hote = 'localhost';
 $user_db = 'root';
 $password_db = '';

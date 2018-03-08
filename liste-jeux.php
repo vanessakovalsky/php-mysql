@@ -45,7 +45,7 @@
               $connexion = new PDO($dsn, $user_db, $password_db);
             }
             catch(PDOExecption $e){
-              printf("Echec de lz connexion : %s\n", $e->getMesage());
+              printf("Echec de la connexion : %s\n", $e->getMesage());
               exit();
             }
             $liste_jeux_sql = 'SELECT * FROM jeux';

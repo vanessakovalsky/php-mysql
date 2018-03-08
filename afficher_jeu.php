@@ -21,13 +21,36 @@ if(isset($_FILES['image']) && $_FILES['image']['error'] == 0){
 }
 
 //On traite les données du formulaire reçues dans $_POST
+/*
 $nouveau_jeu = htmlentities($_POST['nom_jeu']).';'.htmlentities($_POST['editeur']).';'.htmlentities($_POST['annee']).';'.htmlentities($image_url).';'.htmlentities($_POST['descriptif']).';'.htmlentities($_POST['categorie']).';'.htmlentities($_POST['duree']).';'.htmlentities($_POST['nb_joueur']).';'.htmlentities($_POST['commentaire']);
 /* On ouvre le fichier en écriture uniquement (a), pour aller directement à la
 *  fin du fichier et on ajoute la nouvelle ligne
 */
-$file = fopen('jeux.txt','a');
+/*$file = fopen('jeux.txt','a');
 $ecrire = fputs($file,$nouveau_jeu."\n");
-fclose($file);
+fclose($file);*/
+//On se connecte à la BDD
+require_once('includes/connect.php');
+$dsn = 'mysql:dbname='.$db.';host='.$hote;
+try{
+  $connexion = new PDO($dsn, $user_db, $password_db,array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+}
+catch(PDOExecption $e){
+  printf("Echec de la connexion : %s\n", $e->getMesage());
+  exit();
+}
+
+$requete_preparee = $connexion->prepare("INSERT INTO jeux(nom_jeu, editeur, annee, photo, descriptif, categorie, duree, nombre_joueur)
+  VALUES (:nom_jeu, :editeur, :annee ,:photo, :descriptif, :categorie, :duree, :nombre_joueur)");
+$requete_preparee->bindParam(':nom_jeu',$_POST['nom_jeu']);
+$requete_preparee->bindParam(':editeur',$_POST['editeur']);
+$requete_preparee->bindParam(':annee',$_POST['annee']);
+$requete_preparee->bindParam(':photo',$image_url);
+$requete_preparee->bindParam(':descriptif',$_POST['descriptif']);
+$requete_preparee->bindParam(':categorie',$_POST['categorie']);
+$requete_preparee->bindParam(':duree',$_POST['duree']);
+$requete_preparee->bindParam(':nombre_joueur',$_POST['nb_joueur']);
+$requete_preparee->execute();
 echo 'votre nouveau jeu a été ajouté';
  ?>
 
