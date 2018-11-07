@@ -1,0 +1,28 @@
+- Avec l'aide de phpMyAdmin, ou du script SQL bdd.sql créer $
+une base de donnée appelée kingoludo encodée en utf8_general_ci
+- Créer une table jeux, qui reprend les 9 champs du CdC + 
+un champ id en autoincrement
+- Créer une table user, qui reprend les 8 champs du CdC
+- Créer une table user_jeux qui contient deux colonnes :
+-- id_user
+-- id_jeux 
+- Chacune de ces colonnes sera une référence vers un id dans la table concernée
+- A partir des fichiers jeux.txt et user.txt insérer des données en base de données
+- Générer un export sql de votre structure de table + des données 
+- Créer un fichier connect.php qui contient les informations de connexion
+à votre base de données
+- Dans le fichier afficher_jeu.php récupérer les données du formulaires et les insérer
+dans la table jeu à l'aide de PDO 
+- Dans le fichier liste-jeux.php afficher les données des jeux en provenance de la base 
+de données et non plus du fichier
+- Dans le fichier connexion.php vérifier l'identifiant et le mot de passe à partir
+des informations contenus en base de données et non plus dans le fichier txt 
+[BONUS] - Ajouter un formulaire pour créer des utilisateur, et les enregistrer en base
+de données
+[BONUS] Afficher une liste des utilisateurs depuis la base de données
+[BONUS] Ajouter dans la liste de jeux, la possibilité de supprimer un jeu avec un lien
+[BONUS] Lorsque un utilisateur est connecté, lui donné la possibilité d'ajouter un jeu
+à sa collection via un formulaire qui contient une liste déroulante listant les jeux 
+présents en BDD
+[BONUS] Lorsqu'un utilisateur est connecté, lui affiché une liste des jeux qu'il a dans 
+sa collection depuis les informations en BDD

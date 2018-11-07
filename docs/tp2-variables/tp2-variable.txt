@@ -1,0 +1,8 @@
+Nous allons transformer le texte présent dans le HTML en variable afin de pouvoir le modifier plus facilement
+- Créer un dossier includes
+- Dans ce dossier créer un fichier variables.php 
+- Pour chaque chaine de caractère présente dans vos 4 fichiers, créer une variable dans le fichier avec le texte
+et remplacer dans le HTML la chaine de caractère par un affichage PHP (<?php echo $mavariable; ?>) 
+/!\ il faut avoir dans chaque page inclus au préalable le fichier variables.php (en utilisant 
+<?php include_once('includes/variables.php'); ?> 
+- Remplacer les valeurs du tableau de la liste des jeux par une variable de type tableau

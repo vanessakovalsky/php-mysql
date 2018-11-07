@@ -1,0 +1,20 @@
+kingdomino;blue orance;2016;'img/kingdomino.jpg';domino ameliore;familiale;15min;2-4;super jeu
+les aventuriers du rail france;asmodée;2017;'img/rail-france.jpg';a la decouverte de la france;familiale;75min;2-6;belle decouverte
+imaginarium;2018;bombyx;img/imaginarium.jpg;Réparer et construire des machines;familiale;90min;2-5;super mécanique de jeu
+Les colons de catane;Asmodée;2012;Jeu de gestion de ressources;Familiale;60min;2-4;commentaire
+Les colons de catane 2;Asmodée;2012;sglqjgsfl;Gestion;75min;2-4;gqprogp
+Les colons de catane;Asmodée;2012;ghdfhfgdjj;Gestion;45min;2-4;fgsdgf
+gfdshg;fhdsha;45454df;gdfsg;Gestion;fdsg;fgsg;fgsggfsdgdghshzr;
+htrytr;2042;gserghzeth;Gestion;42;42;ghsdh
+test;sdfjfosj;4564;gsfgsf;Apéro;78;5;hdh
+gwsfgsf;gsdhsd;gsdrsd;fgsgsf;Gestion;78;gfsdg;gfsdgsd
+test 42;fssfg;45487;sgsf;Familiale;89;g2;gdfdfg
+gsdfgsd;;;;Familiale;;;
+gsdfgsd;;;;Familiale;;;
+sgsdf;qsgssg;gsgf;img/bdd.png;gsfgsfd;Familiale;;;
+sgsdf;qsgssg;gsgf;img/bdd.png;gsfgsfd;Familiale;;;
+sgsdf;qsgssg;gsgf;img/bdd.png;gsfgsfd;Familiale;;;
+sgsdf;qsgssg;gsgf;img/bdd.png;gsfgsfd;Familiale;;;
+vwxgsq;;;img/bdd.png;;Familiale;;;
+vwxgsq;;;img/bdd.png;;Familiale;;;
+Test;Editeur;2018;img/enjeux_bigdata_devops_amadeus.jpg;fhqsodghqsghlqs;Familiale;56;456;gsfklhgsjkfg

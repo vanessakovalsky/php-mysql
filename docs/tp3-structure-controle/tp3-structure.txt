@@ -1,0 +1,11 @@
+- Définir une variable is_connected -> booléen :)
+- Tester si la variable is_connected est TRUE alors 
+on affiche le profil de l'utilisateur, sinon on affiche
+le formulaire de connexion -> Page connexion.php 
+- Sur la page liste jeux : utiliser le tableau en variable
+et une boucle pour afficher les données dans un tableau sans
+répéter le code HTML 
+- En fonction du navigateur utilisé, affiché en haut de page
+un message différent (IE, Firefox, Chrome et les autres ...)
+--> voir http://php.net/manual/fr/tutorial.useful.php 
+(variable $_SERVER['HTTP_USER_AGENT'] )
