@@ -18,14 +18,13 @@ if(isset($_POST['inputEmail'])){
       $_SESSION['is_connected'] = TRUE;
       // On ajoute l'identifiant en cookie
       setcookie('pseudo',$identifiant, time() + 3600);
-      //On sécurise la connexion avec la création d'un ticket 
+      //On sécurise la connexion avec la création d'un ticket
       $cookie_name = 'ticket';
       $ticket = session_id().microtime().rand(0,999999999999);
       $ticket = hash('sha512', $ticket);
       setcookie($cookie_name,$ticket,time() + (60*20));
       $_SESSION['ticket'] = $ticket;
       //On arrete la boucle dès qu'une correspondance est trouvée
-
       break;
     }
     else {

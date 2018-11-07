@@ -34,8 +34,7 @@
           <textarea class="form-control" name="descriptif" rows="3"></textarea>
         </div>
         <div class="form-group">
-          <label for="categorie">Catégorie</label><br />
-          <i>kjsfhglshglsfgq klfjqlgksl</i>
+          <label for="categorie">Catégorie</label>
           <select class="form-control" name="categorie">
             <option>Familiale</option>
             <option>Gestion</option>
@@ -48,7 +47,6 @@
           <label for="duree">Durée</label>
           <input type="text" name="duree" class="form-control">
         </div>
-
         <div class="form-group">
           <label for="nb_joueur">Nombre de joueurs</label>
           <input type="text" name="nb_joueur" class="form-control">

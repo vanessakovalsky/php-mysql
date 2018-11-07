@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <?php include_once('includes/header.php');?>
+=======
+<?php include_once('includes/header.php'); ?>
+>>>>>>> 28cf59bb07aeba506233d971375429045b0bd361
 
     <!-- Page Content -->
     <div class="container">

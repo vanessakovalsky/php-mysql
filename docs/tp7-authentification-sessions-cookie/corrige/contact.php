@@ -15,9 +15,7 @@ if(isset($_POST['exampleFormControlInput1'])){
   mail($to,$sujet,$message,$header);
   echo "Votre mail a bien été envoyé";
 }
-
 ?>
-
     <!-- Page Content -->
     <div class="container">
 
@@ -30,7 +28,6 @@ if(isset($_POST['exampleFormControlInput1'])){
 
       <!-- Page Features -->
       <div class="row text-center">
-
         <form class="contact" action="" method="post">
           <div class="form-group">
             <label for="exampleFormControlInput1"><?php echo $adresse_email;?></label>

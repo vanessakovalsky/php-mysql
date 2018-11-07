@@ -16,6 +16,7 @@ include_once('includes/header.php');
       <?php
       if(isset($_COOKIE['ticket']) && isset($_SESSION['ticket']) &&
       $_COOKIE['ticket'] == $_SESSION['ticket'] ) {
+
        ?>
 
       <!-- Page Features -->
