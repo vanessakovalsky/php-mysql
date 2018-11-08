@@ -20,6 +20,7 @@
               <th scope="col"><?php echo $colonne_jeu;?></th>
               <th scope="col"><?php echo $colonne_editeur;?></th>
               <th scope="col"><?php echo $colonne_categorie;?></th>
+              <th scope="col">Modifier</th>
               <th scope="col">Supprimer le jeu</th>
             </tr>
           </thead>
@@ -60,6 +61,7 @@
                 echo '<td>'.$jeu['nom_jeu'].'</td>';
                 echo '<td>'.$jeu['categorie'].'</td>';
                 echo '<td>'.$jeu['editeur'].'</td>';
+                echo '<td><a href="creer_jeu.php?id='.$jeu['id'].'">Modifier le jeu</a></td>';
                 echo '<td><a href="delete_jeu.php?id='.$jeu['id'].'">Supprimer le jeu</a></td>';
                 echo '</tr>';
               }

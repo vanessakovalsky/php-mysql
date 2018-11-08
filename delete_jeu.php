@@ -15,7 +15,7 @@ $requete_preparee = $connexion->prepare("DELETE FROM jeux
   WHERE id= :id_jeu;");
 $requete_preparee->bindParam(':id_jeu',$id_jeu);
 if(!$requete_preparee->execute()){
-  echo 'Problème sur la requête de la liste de jeux';
+  echo 'Problème sur la requête de suppression de jeu';
 }
 else {
   $requete_preparee->execute();
