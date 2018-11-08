@@ -39,9 +39,17 @@ catch(PDOExecption $e){
   printf("Echec de la connexion : %s\n", $e->getMesage());
   exit();
 }
-
+if(isset($_POST['id_jeu'])){
+  $requete_preparee = $connexion->prepare("UPDATE jeux SET
+  nom_jeu = :nom_jeu, editeur = :editeur, annee = :annee, photo = :photo,
+  descriptif = :descriptif, categorie = :categorie, duree = :duree, nombre_joueur = :nombre_joueur
+  WHERE id= :id_jeu");
+  $requete_preparee->bindParam(':id_jeu', $_POST['id_jeu']);
+}
+else{
 $requete_preparee = $connexion->prepare("INSERT INTO jeux(nom_jeu, editeur, annee, photo, descriptif, categorie, duree, nombre_joueur)
   VALUES (:nom_jeu, :editeur, :annee ,:photo, :descriptif, :categorie, :duree, :nombre_joueur)");
+}
 $requete_preparee->bindParam(':nom_jeu',$_POST['nom_jeu']);
 $requete_preparee->bindParam(':editeur',$_POST['editeur']);
 $requete_preparee->bindParam(':annee',$_POST['annee']);

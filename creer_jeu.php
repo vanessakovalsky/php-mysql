@@ -66,7 +66,13 @@ include_once('includes/header.php');
         <div class="form-group">
           <label for="categorie">Catégorie</label>
           <select class="form-control" name="categorie">
-            <option>Familiale</option>
+            <option
+            <?php
+              if(isset($jeu[0]['categorie']) && $jeu[0]['categorie'] == 'Familiale'){
+                echo 'selected';
+              }
+            ?>
+            >Familiale</option>
             <option>Gestion</option>
             <option>Figurine</option>
             <option>Exper</option>
@@ -85,6 +91,13 @@ include_once('includes/header.php');
           <label for="commentaire">Commentaire</label>
           <textarea class="form-control" name="commentaire" rows="3"></textarea>
         </div>
+        <?php
+          if(isset($jeu[0]['id'])){
+            ?>
+            <input type="hidden" name='id_jeu' value="<?php echo $jeu[0]['id'];?>">
+          <?php
+          }
+        ?>
         <input type="submit" name="envoyer" class="btn btn-primary mb-2">
         </input>
       </form>
