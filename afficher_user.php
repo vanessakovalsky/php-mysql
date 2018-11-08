@@ -40,8 +40,10 @@ catch(PDOExecption $e){
   exit();
 }
 
-$requete_preparee = $connexion->prepare("INSERT INTO user(login, nom, prenom, role, presentation, avatar, email, password)
-  VALUES (:login, :nom, :prenom ,:role, :presentation, :avatar, :email, :password)");
+$requete_preparee = $connexion->prepare("INSERT INTO user(login, nom,
+   prenom, role, presentation, avatar, email, password)
+  VALUES (:login, :nom, :prenom ,:role, :presentation, :avatar,
+     :email, :password)");
 $requete_preparee->bindParam(':login',$_POST['login']);
 $requete_preparee->bindParam(':nom',$_POST['nom']);
 $requete_preparee->bindParam(':prenom',$_POST['prenom']);
